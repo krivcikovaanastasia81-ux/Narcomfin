@@ -1,15 +1,159 @@
-body {
+/* body {
   background-color: white;
   width: 800px;
   margin: 0 auto;
   padding: 16px;
 }
 h1 {
-  font-size:44px;
+  font-family: Roboto;
+  font-size: 42px;
   line-height: 26px;
 }
-h2 {}
-h3 {}
-h4 {}
-p {}
-blockquote {}
+h2 {
+  font-family: Roboto;
+  font-size: 21px;
+  line-height: 26px;
+}
+h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 26px;
+}
+h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+}
+p {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 26px;
+}
+img {
+  width: 800px;
+}
+blockquote,
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+blockquote {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 26px;
+} */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+ul,
+ol,
+hr {
+  width: 700px;
+  margin: 0 auto;
+}
+img {
+  width: 1024px;
+  margin: 0 auto;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+p,
+ol,
+ul,
+blockquote {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+h1 + p {
+  color: rgba(0, 0, 0, 0.4);
+}
+a {
+  color: inherit;
+}
+h1 {
+  margin: 50px auto;
+  font-size: 38px;
+  line-height: 45px;
+}
+h2 {
+  margin-top: 40 px;
+  font-size: 32px;
+  line-height: 36px;
+}
+h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 32px;
+}
+h4 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 28px;
+}
+h5 {
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 24px;
+}
+hr {
+  margin: 12px auto;
+  width: 1024px;
+}
+img + p {
+  margin-top: 10px;
+}
+ul {
+  list-style-type: square;
+  padding-left: 32px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 32px;
+}
+li {
+  margin: 10px auto;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: -17px;
+}
