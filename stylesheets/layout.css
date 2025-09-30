@@ -1,64 +1,9 @@
-/* body {
-  background-color: white;
-  width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-}
-h1 {
-  font-family: Roboto;
-  font-size: 42px;
-  line-height: 26px;
-}
-h2 {
-  font-family: Roboto;
-  font-size: 21px;
-  line-height: 26px;
-}
-h3 {
-  font-family: Roboto;
-  font-size: 18px;
-  line-height: 26px;
-}
-h4 {
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 26px;
-}
-p {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 26px;
-}
-img {
-  width: 800px;
-}
-blockquote,
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-blockquote {
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 26px;
-} */
+/*Общие стили для страницы*/
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -156,4 +101,57 @@ blockquote::before {
   background-color: #000;
   top: 0;
   left: -17px;
+}
+/* Стили для бокового меню */
+.sidebar {
+  width: 280px;
+  position: fixed;
+  top: 50px;
+  left: 0%;
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+.sidebar:hover {
+  opacity: 1;
+  transition: all ease 0.6s;
+}
+.sidebar ol {
+  width: 100%;
+  font-size: 13px;
+  line-height: 100%;
+  margin: 10px 0;
+  list-style-type: none;
+  padding-left: 12px;
+}
+.sidebar ol ol {
+  color: rgba(0, 0, 0, 0.4);
+}
+.sidebar li {
+  font-size: inherit;
+  margin: 6px 0;
+}
+.sidebar a {
+  font-size: inherit;
+  text-decoration: none;
+}
+/* Стилт для верхнего меню*/
+.menubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.menubar img {
+  width: 350px;
+  margin: 0%;
+}
+.menubar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all ease 0.3s;
+}
+.menubar a:hover {
+  transition: all ease 0.6;
+  color: black;
 }
