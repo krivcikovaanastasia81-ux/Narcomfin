@@ -155,3 +155,75 @@ blockquote::before {
   transition: all ease 0.6;
   color: black;
 }
+
+/* стили для about.html */
+#about {
+  overflow-x: hidden;
+}
+#about::after {
+  content: "";
+  background-image: url("../images/1440.png");
+  width: 1440px;
+  height: 3120px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  opacity: 0.2;
+}
+#about section {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#about section div {
+  width: 48%;
+}
+#about h2 {
+  margin: 0;
+  width: 100%;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+}
+#about p {
+  margin: 24px 0;
+  width: 100%;
+  font-size: 28px;
+  line-height: 38px;
+}
+#about #firstSection {
+  margin-top: 88px;
+}
+#firstSection img {
+  width: 1100px;
+}
+#firstSection div:nth-of-type(1) {
+  padding: 40px 0 0 110px;
+}
+
+#about #secondSection {
+  margin-top: 96px;
+}
+#secondSection img {
+  width: 670px;
+  padding-left: 20px;
+}
+#secondSection div:nth-of-type(2) {
+  padding: 50px 20px 0 12px;
+}
+
+#about #thirdSection {
+  margin-top: 190px;
+  border-bottom: 1px solid #000;
+}
+#thirdSection div:nth-of-type(1) {
+  padding-left: 110px;
+}
+#thirdSection img {
+  width: 1050px;
+  margin: 10px 0 0 10px;
+  border-left: 1px solid #000;
+}
