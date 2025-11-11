@@ -1,0 +1,79 @@
+@media screen and (max-width: 1439px) {
+  #about section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  #about section {
+    flex-direction: column;
+  }
+  #about #secondSection {
+    flex-direction: column-reverse;
+  }
+  #about section img {
+    width: 100%;
+  }
+  #about section div {
+    width: 100%;
+  }
+  #about #firstSection,
+  #about #secondtSection,
+  #about #thirdSection {
+    margin: 4vw 0;
+  }
+  #firstSection div:nth-of-type(1),
+  #secondSection div:nth-of-type(2),
+  #thirdSection div:nth-of-type(1) {
+    padding: 0 18vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  img,
+  hr {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  blockquote,
+  ul,
+  ol,
+  hr {
+    width: 94%;
+  }
+  blockquote::before {
+    left: -3%;
+  }
+  #firstSection div:nth-of-type(1),
+  #secondSection div:nth-of-type(2),
+  #thirdSection div:nth-of-type(1) {
+    padding: 0 4vw;
+  }
+  #fourthSection h2,
+  #fourthSection p {
+    text-align: left;
+  }
+  #about #fourthSection {
+    margin-bottom: 10vw;
+    width: 100%;
+    padding-left: 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menubar {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .menubar a {
+    font-size: 20px;
+  }
+}
