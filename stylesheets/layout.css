@@ -8,92 +8,92 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-p,
-blockquote,
-ul,
-ol,
-hr {
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article p,
+#article blockquote,
+#article ul,
+#article ol,
+#article hr {
   width: 700px;
   margin: 0 auto;
 }
-img {
+#article img {
   width: 1024px;
   margin: 0 auto;
   display: block;
 }
-h1,
-h2,
-h3,
-h4 {
+#article h1,
+#article h2,
+#article h3,
+#article h4 {
   font-family: "PT Sans Caption", sans-serif;
   font-weight: bold;
 }
-p,
-ol,
-ul,
-blockquote {
+#article p,
+#article ol,
+#article ul,
+#article blockquote {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 30px;
 }
-h1 + p {
+#article h1 + p {
   color: rgba(0, 0, 0, 0.4);
 }
 a {
   color: inherit;
 }
-h1 {
+#article h1 {
   margin: 50px auto;
   font-size: 38px;
   line-height: 45px;
 }
-h2 {
+#article h2 {
   margin-top: 40 px;
   font-size: 32px;
   line-height: 36px;
 }
-h3 {
+#article h3 {
   margin-top: 36px;
   font-size: 28px;
   line-height: 32px;
 }
-h4 {
+#article h4 {
   margin-top: 32px;
   font-size: 24px;
   line-height: 28px;
 }
-h5 {
+#article h5 {
   margin-top: 28px;
   font-size: 22px;
   line-height: 24px;
 }
-hr {
+#article hr {
   margin: 12px auto;
   width: 1024px;
 }
-img + p {
+#article img + p {
   margin-top: 10px;
 }
-ul {
+#article ul {
   list-style-type: square;
   padding-left: 32px;
 }
-ol {
+#article ol {
   list-style-type: decimal;
   padding-left: 32px;
 }
-li {
+#article li {
   margin: 10px auto;
 }
-blockquote {
+#article blockquote {
   font-style: italic;
   position: relative;
 }
-blockquote::before {
+#article blockquote::before {
   content: "";
   width: 3px;
   height: 100%;
@@ -115,7 +115,7 @@ blockquote::before {
   opacity: 1;
   transition: all ease 0.6s;
 }
-.sidebar ol {
+#article .sidebar ol .sidebar ol {
   width: 100%;
   font-size: 13px;
   line-height: 100%;
@@ -140,8 +140,15 @@ blockquote::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 6px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 46px;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 #00000030;
 }
+#article .menubar img,
 .menubar img {
   width: 350px;
   margin: 0%;
@@ -268,4 +275,39 @@ blockquote::before {
   border: 1px solid black;
   background-color: black;
 }
-
+/* cards */
+#main {
+  background-color: #eee;
+}
+#main .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+  background-color: #fff;
+  width: 54vw;
+  padding: 1.6vw;
+  text-decoration: none;
+  color: #131313;
+}
+#main section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+#main h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+#main p {
+  font-size: 1.25vw;
+}
+#main .cardImage {
+  width: 100%;
+  height: 15.6vw;
+  background-image: url("../images/narkomfin.jpg");
+  background-size: cover;
+  background-position: center;
+}
